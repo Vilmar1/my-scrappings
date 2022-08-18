@@ -13,6 +13,14 @@ password= ''
 path_c='your/path/to/chromedriver.exe'
 
 def download_imgs(dia_ini,dia_fim,ano,mes,qtde_navs):
+    '''
+    dia_ini= first day to download
+    dia_fim= last day to download
+    ano= year
+    mes= month
+    qtde_navs= number of navigators
+    
+    '''
     navs=[]
     for i in range(0,qtde_navs):
         navs.append(webdriver.Chrome(executable_path=rf'{path_c}'))
@@ -71,10 +79,10 @@ def download_mask(dia_ini,dia_fim,ano,mes,qtde_navs):
         print('baixando ', ano, ' ' , mes ,' ', k)
     return True
 
-
-dowmload_imgs(30,30,'2020','11',3)
+download_imgs(30,30,'2020','11',3)
 
 download_mask(1,31,'2019','01',4)
 
-for i in range(0,qtde_navs):
-    navs[i].quit()
+# for emergency, adapt and use:
+# for i in range(0,qtde_navs):
+    # navs[i].quit()

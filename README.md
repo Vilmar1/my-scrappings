@@ -4,7 +4,7 @@ Repository to publish and store mine web-scrapings, which might be useful for th
 ## ANEEL - Electricity
 ANEEL stands for Agência Nacional de Energia Elétrica, the provider of the Consumer Units per City (Unidades Consumidoras por Município) data. The script scraping_aneel aims to collect this value for all brazilian cities. 
 
-In the code, the first section collects the number of cities in each state, useful to make the counters in the next part. The second section scrapes the website with 11 navigators and stores it in a DataFrame.  
+In the code, the first section collects the number of cities in each state, useful to make the counters in the next part. The second section scrapes the last 11 years of data with 11 navigators, stored in a DataFrame.  
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/38505459/185278775-ad02dc73-d366-4583-bd56-086b7f2da128.png" width="700">
@@ -17,7 +17,7 @@ The Suomi National Polar-orbiting Partnership (or Suomi NPP) satellite collects 
   <img src="https://user-images.githubusercontent.com/38505459/185278031-9df3c9f9-d81c-4acd-a4cd-c49b2fa27a40.png" width="400">
 </p>
 
-The script _____ collects daily VIIRS images in Brazil (in the function _______) and another daily product of NOAA: the VIIRS Cloud Mask, which shows the probability of cloudiness in each pixel (this part relates to the function ___________).
+The script [scraping_eog](https://github.com/Vilmar1/my-scrappings/blob/main/scraping_eog.py) collects daily VIIRS images in Brazil (in the function ```download_imgs()``` ) and another daily product of NOAA: the VIIRS Cloud Mask, which shows the probability of cloudiness in each pixel (this part relates to the function ```download_mask()```).
 
 <p align="center">
    <img src="https://user-images.githubusercontent.com/38505459/185278463-44162138-0295-42a0-ba16-26d27a5dae7b.png" width="700">

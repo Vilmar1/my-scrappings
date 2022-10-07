@@ -17,7 +17,7 @@ The Suomi National Polar-orbiting Partnership (or Suomi NPP) satellite collects 
   <img src="https://user-images.githubusercontent.com/38505459/185278031-9df3c9f9-d81c-4acd-a4cd-c49b2fa27a40.png" width="400">
 </p>
 
-The script [scraping_eog](https://github.com/Vilmar1/my-scrappings/blob/main/scraping_eog.py) collects daily VIIRS images in Brazil (in the function ```download_imgs()``` ) and another daily product of NOAA: the VIIRS Cloud Mask, which shows the probability of cloudiness in each pixel (this part relates to the function ```download_mask()```).
+The script [scraping_eog](https://github.com/Vilmar1/my-scrappings/blob/main/scraping_eog.py) collects daily two products of NOAA: the nighlights VIIRS images in Brazil (in the function ```download_imgs()``` ) and the the VIIRS Cloud Mask, an image with the probability of cloudiness in each pixel (this part relates to the function ```download_mask()```).
 
 <p align="center">
    <img src="https://user-images.githubusercontent.com/38505459/185278463-44162138-0295-42a0-ba16-26d27a5dae7b.png" width="700">
